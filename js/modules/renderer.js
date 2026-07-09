@@ -116,7 +116,7 @@ export function renderHome() {
             </a>
           `,
                   )
-                  .join("")
+                  .join("") + `<div class="post-card post-card--coming-soon" aria-hidden="true"><div class="coming-soon-inner"><span class="coming-soon-icon">✍️</span><h2 class="post-card-title">More articles coming soon</h2><p class="post-card-summary">New posts on education, tech & teaching are on the way. Stay tuned!</p></div></div>`
               : `
             <div class="no-posts-message">
               <h3>No articles found</h3>
@@ -195,7 +195,7 @@ export function updatePostsGrid() {
       </a>
     `,
             )
-            .join("")
+            .join("") + `<div class="post-card post-card--coming-soon" aria-hidden="true"><div class="coming-soon-inner"><span class="coming-soon-icon">✍️</span><h2 class="post-card-title">More articles coming soon</h2><p class="post-card-summary">New posts on education, tech & teaching are on the way. Stay tuned!</p></div></div>`
         : `
       <div class="no-posts-message">
         <h3>No articles found</h3>
