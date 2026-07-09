@@ -58,6 +58,28 @@ nav {
   gap: 1.5rem;
 }
 
+.nav-btn-external {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: #0b0f17;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.3);
+}
+
+.nav-btn-external:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+}
+
 .theme-toggle-btn {
   background: none;
   border: none;
