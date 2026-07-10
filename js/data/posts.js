@@ -1,5 +1,32 @@
 const blogPosts = [
   {
+    id: "football-the-ultimate-global-distraction",
+    title: "Football: The Ultimate Global Distraction",
+    date: "July 2, 2026",
+    readTime: "4 min read",
+    banner: "./assets/global_economy.jpg",
+    summary:
+      "The World Cup is dominating the global conversation while wars, economic chaos, and slow-moving crises quietly fade from the front page. Is football the world's greatest escape hatch — or something more dangerous?",
+    tags: ["Society", "Politics", "Psychology"],
+    content: `
+      <p class="lead">Right now, the World Cup in the USA is completely dominating the global conversation. The internet is endlessly debating political theater — like the sheer drama of politicians getting involved in red card penalties — while massive, world-altering crises are quietly pushed off the front page.</p>
+
+      <p>The ongoing war in Ukraine, the devastation in Gaza, and the economic chaos from the Strait of Hormuz closure have all taken a backseat to a game played on a pitch. Even the most dedicated activists eventually run out of steam, and the world just moves on to the next spectacle.</p>
+
+      <h2>Compassion Fatigue and the Escape</h2>
+      <p>Why does this happen so easily? It comes down to basic human psychology. We are suffering from massive compassion fatigue. People simply cannot sustain high-stress outrage for months on end. When real-world problems feel entirely out of our control — whether it is a geopolitical war or an impending El Niño weather disaster — our brains desperately look for an escape hatch. Sports provide the perfect, low-stakes drama to numb the exhaustion of reality.</p>
+
+      <h2>The Danger of Looking Away</h2>
+      <p>The deeper problem is that the structural issues we are ignoring do not hit pause just because a tournament started. Our deteriorating economies, plunging birth rates, and skyrocketing inequalities are slow-moving disasters. Politicians and media networks do not even need to manufacture distractions; they just point the cameras at the football pitch so we stop asking the hard questions about our daily struggles.</p>
+
+      <blockquote>
+        "Ignoring a fundamentally broken system does not fix it. We are essentially putting a band-aid on a broken leg."
+      </blockquote>
+
+      <p>We are collectively choosing to kick the can down the road. But ignoring a fundamentally broken system does not fix it. We are essentially putting a band-aid on a broken leg, ensuring that when the reality check finally comes, the impact will be much harder to survive.</p>
+    `,
+  },
+  {
     id: "is-global-economy-steering-toward-cliff",
     title: "Is the Global Economy Steering Toward a Cliff?",
     date: "June 23, 2026",
