@@ -1,5 +1,41 @@
 const blogPosts = [
   {
+    id: "confessions-of-a-35-year-old-millennial",
+    title: "Confessions of a 35-Year-Old Millennial: Why We Feel So Unprepared for Life",
+    date: "July 9, 2026",
+    readTime: "5 min read",
+    banner: "./assets/global_economy.jpg",
+    summary:
+      "Many 35-year-old millennials wake up feeling like they missed the orientation for adulthood. Sheltered upbringings, a broken economy, and an outdated script for life have left a generation quietly overwhelmed — and it is not a personal failure.",
+    tags: ["Society", "Psychology", "Millennials"],
+    content: `
+      <p class="lead">It is a quiet reality for many 35-year-old millennials: waking up one day and realizing that adulthood feels less like a natural progression and more like a missed orientation. For those who grew up somewhat sheltered or without major early-life struggles, the sudden transition into full-blown responsibility can be completely overwhelming.</p>
+
+      <p>The skills required to navigate everyday life often feel absent, leaving a lingering fear that everyone else somehow figured it out while we were looking the other way.</p>
+
+      <h2>The Weight of the Mundane</h2>
+      <p>Things that seem effortless to older generations — like fixing things around the apartment or maintaining a household — often feel like insurmountable tasks. There is a heavy, unspoken guilt associated with this. However, the reality of modern "adulting" is shifting. Recognizing a problem and outsourcing the solution is a valid way to navigate these hurdles. When a kitchen appliance like an old, smoking oven breaks down, simply ordering a replacement and hiring a handyman to install it is a genuine victory. It is not about doing it all yourself; it is about taking charge and getting it done.</p>
+
+      <h2>The Exhaustion of "Status Checks"</h2>
+      <p>This feeling of being perpetually behind makes socializing uniquely exhausting. Conversations with peers and family members frequently devolve into interrogations about jobs, life plans, and traditional milestones. When these topics do not align with personal interests or reality, these interactions feel incredibly alienating.</p>
+      <p>It is completely natural to avoid them. Sometimes, having a complex conversation with an AI about macroeconomics or philosophy is infinitely more appealing than sitting through a draining dinner party comparing mortgages and career trajectories. When socializing feels like an assessment rather than a connection, pulling back is a normal defense mechanism.</p>
+
+      <h2>The Root of the Generational Disconnect</h2>
+      <p>This internal struggle is not just a personal flaw; it is deeply connected to much broader generational trends that are defining millennials today.</p>
+      <ul>
+        <li><strong>The Loneliness Epidemic:</strong> When social interactions feel like a subtle competition or a constant reminder of unreached milestones, withdrawing becomes the safest and most peaceful option.</li>
+        <li><strong>Opting Out of Parenthood:</strong> If just managing an apartment and keeping up with day-to-day maintenance feels like carrying a heavy weight, the idea of adding the massive, lifelong responsibility of a child into the mix is terrifying.</li>
+        <li><strong>Financial Instability:</strong> The pressure to hit traditional markers of success — within an economy that is fundamentally broken compared to the one previous generations enjoyed — creates a constant baseline of anxiety.</li>
+      </ul>
+
+      <blockquote>
+        "We were handed a script for adulthood that was written decades ago. When our actual lives do not match that script, it is easy to internalize it as a failure."
+      </blockquote>
+
+      <p>But perhaps it is simply time to accept that moving at our own pace, prioritizing our own peace, and rewriting the rules of what it means to be an adult is the only sustainable way forward.</p>
+    `,
+  },
+  {
     id: "football-the-ultimate-global-distraction",
     title: "Football: The Ultimate Global Distraction",
     date: "July 2, 2026",
