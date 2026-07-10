@@ -4,7 +4,7 @@ const blogPosts = [
     title: "Confessions of a 35-Year-Old Millennial: Why We Feel So Unprepared for Life",
     date: "July 9, 2026",
     readTime: "5 min read",
-    banner: "./assets/global_economy.jpg",
+    banner: "./assets/millennial_banner.jpg",
     summary:
       "Many 35-year-old millennials wake up feeling like they missed the orientation for adulthood. Sheltered upbringings, a broken economy, and an outdated script for life have left a generation quietly overwhelmed — and it is not a personal failure.",
     tags: ["Society", "Psychology", "Millennials"],
@@ -40,7 +40,7 @@ const blogPosts = [
     title: "Football: The Ultimate Global Distraction",
     date: "July 2, 2026",
     readTime: "4 min read",
-    banner: "./assets/global_economy.jpg",
+    banner: "./assets/football_banner.jpg",
     summary:
       "The World Cup is dominating the global conversation while wars, economic chaos, and slow-moving crises quietly fade from the front page. Is football the world's greatest escape hatch — or something more dangerous?",
     tags: ["Society", "Politics", "Psychology"],
