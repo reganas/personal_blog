@@ -145,7 +145,11 @@
 }
 
 /* Detail view styling */
-.post-detail-section {
+.back-btn--bottom {
+  margin-top: 3rem;
+}
+
+
   max-width: 800px;
   margin: 0 auto;
   padding: 4rem 1.5rem;

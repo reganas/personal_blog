@@ -1,5 +1,5 @@
 export const state = {
-  theme: localStorage.getItem("theme") || "dark",
+  theme: localStorage.getItem("theme") || "light",
   activeTag: "All",
   searchQuery: "",
   currentPostId: null,
