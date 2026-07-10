@@ -256,21 +256,14 @@ export function renderPostDetail(postId) {
         <div class="post-detail-body">
           ${post.content}
         </div>
-
-        <button class="back-btn back-btn--bottom" id="post-detail-back-btn-bottom" aria-label="Go back to homepage">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="19" y1="12" x2="5" y2="12"></line>
-            <polyline points="12 19 5 12 12 5"></polyline>
-          </svg>
-          Back to Articles
-        </button>
       </article>
     `;
 
     const backBtn = document.getElementById("post-detail-back-btn");
-    if (backBtn) backBtn.addEventListener("click", () => { window.location.hash = "#/"; });
-    const backBtnBottom = document.getElementById("post-detail-back-btn-bottom");
-    if (backBtnBottom) backBtnBottom.addEventListener("click", () => { window.location.hash = "#/"; });
+    if (backBtn)
+      backBtn.addEventListener("click", () => {
+        window.location.hash = "#/";
+      });
   });
 }
 
