@@ -420,3 +420,20 @@ footer {
 .contact-form-status.is-success {
   color: var(--accent-primary);
 }
+
+.contact-form-disclaimer {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.contact-form-disclaimer a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.contact-form-disclaimer a:hover {
+  color: var(--accent-secondary);
+}

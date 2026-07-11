@@ -296,14 +296,6 @@ export function renderCV() {
             <h1 class="cv-title">My <span>Resume</span></h1>
             <p style="color: var(--text-secondary); margin-top: 0.5rem;">Educator & Aspiring Web Developer</p>
           </div>
-          <a href="./assets/CV_Justinas_Steikunas.pdf" class="download-cv-btn" download aria-label="Download Justinas Steikunas PDF CV">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            Download PDF CV
-          </a>
         </div>
 
         <div class="cv-grid">
@@ -552,6 +544,9 @@ export function renderContact() {
             </div>
 
             <button type="submit" class="contact-form-submit">Send Message</button>
+            <p class="contact-form-disclaimer">
+              Your information is only used to reply to your inquiry. Read my full <a href="#/privacy">Privacy Policy</a>.
+            </p>
             <p id="contact-form-status" class="contact-form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -593,6 +588,72 @@ export function renderContact() {
         } catch (error) {
           formStatus.textContent = "Something went wrong. Please try again.";
         }
+      });
+    }
+  });
+}
+
+export function renderPrivacy() {
+  animateTransition(() => {
+    const viewport = getViewport();
+    if (!viewport) return;
+
+    viewport.innerHTML = `
+      <section class="container post-detail-section">
+        <button class="back-btn" id="privacy-back-btn" aria-label="Go back to homepage">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Back to Articles
+        </button>
+
+        <h1 class="post-detail-title">Privacy Policy</h1>
+
+        <div class="post-detail-meta" style="margin-bottom: 2rem;">
+          <time datetime="2026-07-11">July 11, 2026</time>
+        </div>
+
+        <div class="post-detail-body">
+          <p>Welcome to my personal blog. Your privacy is important to me, and I am committed to protecting your personal data. This policy explains what information I collect when you visit my website and use my contact form, and how I handle it.</p>
+
+          <h2>1. Information I Collect</h2>
+          <p>When you use the contact form on this website, I collect the following personal information that you voluntarily provide:</p>
+          <ul>
+            <li>Your Name</li>
+            <li>Your Email Address</li>
+            <li>The content of your message</li>
+          </ul>
+
+          <h2>2. How I Use Your Information</h2>
+          <p>The information you provide through the contact form is used for one purpose only: <strong>to read and respond to your inquiry</strong>. I do not use your email address for marketing purposes, I do not have a newsletter, and I will never sell or share your personal information with third parties for their own commercial use.</p>
+
+          <h2>3. Third-Party Services</h2>
+          <p>To keep this website running securely, I use a few trusted third-party services that act as "Data Processors":</p>
+          <ul>
+            <li><strong>Formspace:</strong> I use Formspace to securely process and route the messages you send via the contact form to my personal email inbox. You can review their privacy practices on their website.</li>
+            <li><strong>Vercel:</strong> This website is hosted on Vercel, which may collect basic, anonymized server logs (like browser type and timestamp) necessary for the security and operation of the site.</li>
+          </ul>
+
+          <h2>4. Data Retention</h2>
+          <p>I only keep your contact form submissions for as long as necessary to resolve your inquiry. Periodically (every 3-6 months), I review and permanently delete old messages and their associated personal data.</p>
+
+          <h2>5. Your Rights</h2>
+          <p>Under the General Data Protection Regulation (GDPR), you have the right to:</p>
+          <ul>
+            <li>Ask what personal data I hold about you.</li>
+            <li>Request that I correct any inaccurate data.</li>
+            <li>Request that I permanently delete your messages and contact details.</li>
+          </ul>
+          <p>If you would like to exercise any of these rights, please reach out to me using the contact form on this website.</p>
+        </div>
+      </section>
+    `;
+
+    const backBtn = document.getElementById("privacy-back-btn");
+    if (backBtn) {
+      backBtn.addEventListener("click", () => {
+        window.location.hash = "#/";
       });
     }
   });

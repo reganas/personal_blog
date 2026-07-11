@@ -4,6 +4,7 @@ import {
   renderCV,
   renderContact,
   renderPostDetail,
+  renderPrivacy,
 } from "./renderer.js";
 
 export function handleRoute() {
@@ -19,7 +20,7 @@ export function handleRoute() {
   if (navArticles && navCv && navContact) {
     navArticles.classList.toggle(
       "active",
-      hash !== "#/cv" && hash !== "#/contact",
+      hash === "#/" || hash === "" || hash.startsWith("#/post/"),
     );
     navCv.classList.toggle("active", hash === "#/cv");
     navContact.classList.toggle("active", hash === "#/contact");
@@ -35,6 +36,9 @@ export function handleRoute() {
   } else if (hash === "#/contact") {
     state.currentPostId = null;
     renderContact();
+  } else if (hash === "#/privacy") {
+    state.currentPostId = null;
+    renderPrivacy();
   } else {
     state.currentPostId = null;
     renderHome();
