@@ -116,7 +116,8 @@ export function renderHome() {
             </a>
           `,
                   )
-                  .join("") + `<div class="post-card post-card--coming-soon" aria-hidden="true"><div class="coming-soon-inner"><span class="coming-soon-icon">✍️</span><h2 class="post-card-title">More articles coming soon</h2><p class="post-card-summary">New posts on education, tech & teaching are on the way. Stay tuned!</p></div></div>`
+                  .join("") +
+                `<div class="post-card post-card--coming-soon" aria-hidden="true"><div class="coming-soon-inner"><span class="coming-soon-icon">✍️</span><h2 class="post-card-title">More articles coming soon</h2><p class="post-card-summary">New posts on education, tech & teaching are on the way. Stay tuned!</p></div></div>`
               : `
             <div class="no-posts-message">
               <h3>No articles found</h3>
@@ -195,7 +196,8 @@ export function updatePostsGrid() {
       </a>
     `,
             )
-            .join("") + `<div class="post-card post-card--coming-soon" aria-hidden="true"><div class="coming-soon-inner"><span class="coming-soon-icon">✍️</span><h2 class="post-card-title">More articles coming soon</h2><p class="post-card-summary">New posts on education, tech & teaching are on the way. Stay tuned!</p></div></div>`
+            .join("") +
+          `<div class="post-card post-card--coming-soon" aria-hidden="true"><div class="coming-soon-inner"><span class="coming-soon-icon">✍️</span><h2 class="post-card-title">More articles coming soon</h2><p class="post-card-summary">New posts on education, tech & teaching are on the way. Stay tuned!</p></div></div>`
         : `
       <div class="no-posts-message">
         <h3>No articles found</h3>
@@ -268,9 +270,17 @@ export function renderPostDetail(postId) {
     `;
 
     const backBtn = document.getElementById("post-detail-back-btn");
-    if (backBtn) backBtn.addEventListener("click", () => { window.location.hash = "#/"; });
-    const backBtnBottom = document.getElementById("post-detail-back-btn-bottom");
-    if (backBtnBottom) backBtnBottom.addEventListener("click", () => { window.location.hash = "#/"; });
+    if (backBtn)
+      backBtn.addEventListener("click", () => {
+        window.location.hash = "#/";
+      });
+    const backBtnBottom = document.getElementById(
+      "post-detail-back-btn-bottom",
+    );
+    if (backBtnBottom)
+      backBtnBottom.addEventListener("click", () => {
+        window.location.hash = "#/";
+      });
   });
 }
 
@@ -301,48 +311,7 @@ export function renderCV() {
           <div class="cv-sidebar">
             <div class="cv-photo-container">
               <img class="cv-photo" src="./assets/personal_photo.jpg" alt="Justinas Steikunas Profile Headshot">
-            </div>
-
-            <!-- Contact Information -->
-            <div class="cv-card">
-              <h2 class="cv-card-title">Contact Details</h2>
-              <ul class="cv-contact-list">
-                <li class="cv-contact-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                  <span>Vilnius, Lithuania</span>
-                </li>
-                <li class="cv-contact-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                  </svg>
-                  <a href="tel:+37062294505">+370 622 94505</a>
-                </li>
-                <li class="cv-contact-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                  <a href="mailto:justinas.steikunas@gmail.com">justinas.steikunas@gmail.com</a>
-                </li>
-                <li class="cv-contact-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg>
-                  <a href="https://linkedin.com/in/justinassteikunas" target="_blank" rel="noopener noreferrer">justinassteikunas</a>
-                </li>
-                <li class="cv-contact-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>
-                  <a href="https://github.com/reganas" target="_blank" rel="noopener noreferrer">reganas</a>
-                </li>
-              </ul>
-            </div>
+            </div>       
 
             <!-- Skills -->
             <div class="cv-card">
@@ -542,5 +511,89 @@ export function renderCV() {
         </div>
       </section>
     `;
+  });
+}
+
+export function renderContact() {
+  animateTransition(() => {
+    const viewport = getViewport();
+    if (!viewport) return;
+
+    viewport.innerHTML = `
+      <section class="container contact-page">
+        <div class="contact-hero">
+          <p class="hero-badge">Contact</p>
+          <h1 class="hero-title">Let’s talk</h1>
+          <p class="contact-copy">
+            If you’d like to connect about education, web development, or a collaboration, send a note here and I’ll get back to you.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/xeeyjqnn" method="POST">
+            <div class="contact-field">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" required placeholder="Your name">
+            </div>
+
+            <div class="contact-field">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" required placeholder="your@email.com">
+            </div>
+
+            <div class="contact-field">
+              <label for="contact-subject">Subject</label>
+              <input id="contact-subject" name="subject" type="text" required placeholder="What would you like to discuss?">
+            </div>
+
+            <div class="contact-field">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="contact-form-submit">Send Message</button>
+            <p id="contact-form-status" class="contact-form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    `;
+
+    const contactForm = document.getElementById("contact-form");
+    const formStatus = document.getElementById("contact-form-status");
+
+    if (contactForm && formStatus) {
+      const FORM_ENDPOINT = "https://formspree.io/f/xeeyjqnn";
+
+      contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const name = String(formData.get("name") || "").trim();
+        const email = String(formData.get("email") || "").trim();
+        const subject = String(formData.get("subject") || "").trim();
+        const message = String(formData.get("message") || "").trim();
+
+        formStatus.textContent = "Sending...";
+        formStatus.classList.remove("is-success");
+
+        try {
+          const response = await fetch(FORM_ENDPOINT, {
+            method: "POST",
+            headers: { Accept: "application/json" },
+            body: formData,
+          });
+
+          if (response.ok) {
+            formStatus.textContent = "Thanks! Your message has been sent.";
+            formStatus.classList.add("is-success");
+            contactForm.reset();
+          } else {
+            throw new Error("Submission failed");
+          }
+        } catch (error) {
+          formStatus.textContent = "Something went wrong. Please try again.";
+        }
+      });
+    }
   });
 }

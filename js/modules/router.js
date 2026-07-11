@@ -1,5 +1,10 @@
 import { state } from "./state.js";
-import { renderHome, renderCV, renderPostDetail } from "./renderer.js";
+import {
+  renderHome,
+  renderCV,
+  renderContact,
+  renderPostDetail,
+} from "./renderer.js";
 
 export function handleRoute() {
   const hash = window.location.hash || "#/";
@@ -9,14 +14,15 @@ export function handleRoute() {
 
   const navArticles = document.getElementById("nav-link-articles");
   const navCv = document.getElementById("nav-link-cv");
-  if (navArticles && navCv) {
-    if (hash === "#/cv") {
-      navArticles.classList.remove("active");
-      navCv.classList.add("active");
-    } else {
-      navArticles.classList.add("active");
-      navCv.classList.remove("active");
-    }
+  const navContact = document.getElementById("nav-link-contact");
+
+  if (navArticles && navCv && navContact) {
+    navArticles.classList.toggle(
+      "active",
+      hash !== "#/cv" && hash !== "#/contact",
+    );
+    navCv.classList.toggle("active", hash === "#/cv");
+    navContact.classList.toggle("active", hash === "#/contact");
   }
 
   if (hash.startsWith("#/post/")) {
@@ -26,6 +32,9 @@ export function handleRoute() {
   } else if (hash === "#/cv") {
     state.currentPostId = null;
     renderCV();
+  } else if (hash === "#/contact") {
+    state.currentPostId = null;
+    renderContact();
   } else {
     state.currentPostId = null;
     renderHome();

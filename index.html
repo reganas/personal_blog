@@ -1,83 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal blog and CV of Justinas Steikunas, English Teacher integrating technology in education and pursuing Web Development.">
-  <title>Justinas Steikunas | Blog & CV</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <!-- Reading Progress Bar (only visible on detail view) -->
-  <div id="reading-progress" class="reading-progress-bar"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal blog and CV of Justinas Steikunas, English Teacher integrating technology in education and pursuing Web Development."
+    />
+    <title>Justinas Steikunas | Blog & CV</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Reading Progress Bar (only visible on detail view) -->
+    <div id="reading-progress" class="reading-progress-bar"></div>
 
-  <!-- Decorative ambient glows -->
-  <div class="ambient-glow-1"></div>
-  <div class="ambient-glow-2"></div>
+    <!-- Decorative ambient glows -->
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
 
-  <!-- Sticky Header -->
-  <header>
-    <div class="container">
-      <nav aria-label="Main Navigation">
-        <a href="#/" class="logo-container" id="nav-logo" aria-label="Justinas Steikunas Portfolio Home">
-          <div class="logo-icon" aria-hidden="true">JS</div>
-          <span class="logo-text">Justinas.S</span>
-        </a>
+    <!-- Sticky Header -->
+    <header>
+      <div class="container">
+        <nav aria-label="Main Navigation">
+          <a
+            href="#/"
+            class="logo-container"
+            id="nav-logo"
+            aria-label="Justinas Steikunas Portfolio Home"
+          >
+            <div class="logo-icon" aria-hidden="true">JS</div>
+            <span class="logo-text">Justinas.S</span>
+          </a>
 
-        <div class="nav-links" id="nav-links">
-          <a href="#/" class="nav-link active" id="nav-link-articles">Articles</a>
-          <a href="#/cv" class="nav-link" id="nav-link-cv">Resume / CV</a>
-          <a href="https://english-practice-students.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-btn-external nav-btn-external--mobile">🎓 English Practice</a>
-        </div>
-        
-        <div class="nav-actions">
-          <a href="https://english-practice-students.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-btn-external nav-btn-external--desktop">🎓 English Practice</a>
-          <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
-          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
-            <span class="theme-toggle-track">
-              <span class="theme-toggle-thumb">
-                <!-- Moon -->
-                <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-                <!-- Sun -->
-                <svg id="theme-icon-sun" style="display:none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="5"></circle>
-                  <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
-                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                  <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
-                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
+          <div class="nav-links" id="nav-links">
+            <a href="#/" class="nav-link active" id="nav-link-articles"
+              >Articles</a
+            >
+            <a href="#/cv" class="nav-link" id="nav-link-cv">Resume / CV</a>
+            <a href="#/contact" class="nav-link" id="nav-link-contact"
+              >Contact Me</a
+            >
+          </div>
+
+          <div class="nav-actions">
+            <a
+              href="https://english-practice-students.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-btn-external nav-btn-external--desktop"
+              >🎓 English Practice</a
+            >
+            <button
+              id="hamburger-btn"
+              class="hamburger-btn"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+            >
+              <span></span><span></span><span></span>
+            </button>
+            <button
+              id="theme-toggle"
+              class="theme-toggle-btn"
+              aria-label="Toggle Light/Dark Theme"
+            >
+              <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb">
+                  <!-- Moon -->
+                  <svg
+                    id="theme-icon-moon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                    ></path>
+                  </svg>
+                  <!-- Sun -->
+                  <svg
+                    id="theme-icon-sun"
+                    style="display: none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                </span>
               </span>
-            </span>
-          </button>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Main Viewport Container -->
-  <main id="app-viewport">
-    <!-- Main content will be dynamically injected here by app.js -->
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-links">
-          <a href="#/">Home</a>
-          <a href="https://github.com/reganas" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/justinassteikunas" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-        <p>&copy; 2026 Justinas Steikunas. Designed & built with Antigravity.</p>
+            </button>
+          </div>
+        </nav>
       </div>
-    </div>
-  </footer>
+    </header>
 
-  <!-- App logic scripts -->
-  <script type="module" src="./js/app.js"></script>
-</body>
+    <!-- Main Viewport Container -->
+    <main id="app-viewport">
+      <!-- Main content will be dynamically injected here by app.js -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="#/">Home</a>
+            <a
+              href="https://github.com/reganas"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://linkedin.com/in/justinassteikunas"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </div>
+          <p>
+            &copy; 2026 Justinas Steikunas. Designed & built with Antigravity.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- App logic scripts -->
+    <script type="module" src="./js/app.js"></script>
+  </body>
 </html>
