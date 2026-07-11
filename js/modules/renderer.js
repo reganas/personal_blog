@@ -523,6 +523,11 @@ export function renderContact() {
 
         <div class="contact-card">
           <form id="contact-form" class="contact-form" action="https://formspree.io/f/xeeyjqnn" method="POST">
+            <!-- Honeypot field to prevent spam bots -->
+            <div style="display: none;" aria-hidden="true">
+              <input type="text" id="contact-bot-field" name="bot-field" tabindex="-1" autocomplete="off">
+            </div>
+
             <div class="contact-field">
               <label for="contact-name">Name</label>
               <input id="contact-name" name="name" type="text" required placeholder="Your name">
@@ -540,7 +545,7 @@ export function renderContact() {
 
             <div class="contact-field">
               <label for="contact-message">Message</label>
-              <textarea id="contact-message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+              <textarea id="contact-message" name="message" rows="6" required minlength="10" maxlength="5000" placeholder="Write your message here..."></textarea>
             </div>
 
             <button type="submit" class="contact-form-submit">Send Message</button>
@@ -563,6 +568,16 @@ export function renderContact() {
         event.preventDefault();
 
         const formData = new FormData(contactForm);
+
+        // Honeypot validation check
+        const botField = formData.get("bot-field");
+        if (botField) {
+          formStatus.textContent = "Thanks! Your message has been sent.";
+          formStatus.classList.add("is-success");
+          contactForm.reset();
+          return;
+        }
+
         const name = String(formData.get("name") || "").trim();
         const email = String(formData.get("email") || "").trim();
         const subject = String(formData.get("subject") || "").trim();
