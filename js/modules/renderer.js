@@ -545,7 +545,7 @@ export function renderContact() {
 
             <button type="submit" class="contact-form-submit">Send Message</button>
             <p class="contact-form-disclaimer">
-              Your information is only used to reply to your inquiry. Read my full <a href="#/privacy">Privacy Policy</a>.
+              Your information is only used to reply to your inquiry. / Jūsų informacija naudojama tik atsakyti į jūsų užklausą. Read my <a href="#/privacy">Privacy Policy / Privatumo Politiką</a>.
             </p>
             <p id="contact-form-status" class="contact-form-status" role="status" aria-live="polite"></p>
           </form>
@@ -593,6 +593,76 @@ export function renderContact() {
   });
 }
 
+const englishContent = `
+  <p>Welcome to my personal blog. Your privacy is important to me, and I am committed to protecting your personal data. This policy explains what information I collect when you visit my website and use my contact form, and how I handle it.</p>
+
+  <h2>1. Information I Collect</h2>
+  <p>When you use the contact form on this website, I collect the following personal information that you voluntarily provide:</p>
+  <ul>
+    <li>Your Name</li>
+    <li>Your Email Address</li>
+    <li>The content of your message</li>
+  </ul>
+
+  <h2>2. How I Use Your Information</h2>
+  <p>The information you provide through the contact form is used for one purpose only: <strong>to read and respond to your inquiry</strong>. I do not use your email address for marketing purposes, I do not have a newsletter, and I will never sell or share your personal information with third parties for their own commercial use.</p>
+
+  <h2>3. Third-Party Services</h2>
+  <p>To keep this website running securely, I use a few trusted third-party services that act as "Data Processors":</p>
+  <ul>
+    <li><strong>Formspace:</strong> I use Formspace to securely process and route the messages you send via the contact form to my personal email inbox. You can review their privacy practices on their website.</li>
+    <li><strong>Vercel:</strong> This website is hosted on Vercel, which may collect basic, anonymized server logs (like browser type and timestamp) necessary for the security and operation of the site.</li>
+  </ul>
+
+  <h2>4. Data Retention</h2>
+  <p>I only keep your contact form submissions for as long as necessary to resolve your inquiry. Periodically (every 3-6 months), I review and permanently delete old messages and their associated personal data.</p>
+
+  <h2>5. Your Rights</h2>
+  <p>Under the General Data Protection Regulation (GDPR), you have the right to:</p>
+  <ul>
+    <li>Ask what personal data I hold about you.</li>
+    <li>Request that I correct any inaccurate data.</li>
+    <li>Request that I permanently delete your messages and contact details.</li>
+  </ul>
+  <p>If you would like to exercise any of these rights, please reach out to me using the contact form on this website.</p>
+`;
+
+const lithuanianContent = `
+  <p>Sveiki atvykę į mano asmeninį tinklaraštį. Jūsų privatumas man yra svarbus, todėl esu įsipareigojęs saugoti jūsų asmens duomenis. Šioje politikoje paaiškinama, kokią informaciją renku, kai lankotės mano svetainėje ir naudojatės kontaktine forma, bei kaip su ja elgiuosi.</p>
+
+  <h2>1. Renkama informacija</h2>
+  <p>Kai naudojatės šios svetainės kontaktine forma, renku šią jūsų savanoriškai pateikiamą asmeninę informaciją:</p>
+  <ul>
+    <li>Jūsų vardą</li>
+    <li>Jūsų el. pašto adresą</li>
+    <li>Jūsų žinutės turinį</li>
+  </ul>
+
+  <h2>2. Kaip naudoju jūsų informaciją</h2>
+  <p>Informacija, kurią pateikiate per kontaktinę formą, naudojama tik vienam tikslui: <strong>perskaityti jūsų užklausą ir į ją atsakyti</strong>. Nenaudoju jūsų el. pašto adreso rinkodaros tikslais, neturiu naujienlaiškio ir niekada neparduosiu ar neperduosiu jūsų asmeninės informacijos trečiosioms šalims jų komerciniams tikslams.</p>
+
+  <h2>3. Trečiųjų šalių paslaugos</h2>
+  <p>Siekdamas užtikrinti saugų šios svetainės veikimą, naudoju kelias patikimas trečiųjų šalių paslaugas, kurios veikia kaip „Duomenų tvarkytojai“:</p>
+  <ul>
+    <li><strong>Formspace:</strong> Naudoju „Formspace“, kad saugiai apdoročiau ir nukreipčiau jūsų žinutes iš kontaktinės formos į savo asmeninę el. pašto dėžutę. Su jų privatumo praktika galite susipažinti jų svetainėje.</li>
+    <li><strong>Vercel:</strong> Ši svetainė talpinama „Vercel“ platformoje, kuri gali rinkti pagrindinius, anonimizuotus serverio žurnalus (pvz., naršyklės tipą ir laiko žymas), būtinus svetainės saugumui ir veikimui užtikrinti.</li>
+  </ul>
+
+  <h2>4. Duomenų saugojimas</h2>
+  <p>Jūsų kontaktinės formos pateiktus duomenis saugau tik tol, kol to reikia jūsų užklausai išspręsti. Periodiškai (kas 3–6 mėnesius) peržiūriu ir visam laikui ištrinu senas žinutes bei su jomis susijusius asmens duomenis.</p>
+
+  <h2>5. Jūsų teisės</h2>
+  <p>Pagal Bendrąjį duomenų apsaugos reglamentą (BDAR), jūs turite teisę:</p>
+  <ul>
+    <li>Sužinoti, kokius jūsų asmens duomenis turiu.</li>
+    <li>Prašyti ištaisyti netikslius duomenis.</li>
+    <li>Prašyti visam laikui ištrinti jūsų žinutes ir kontaktinius duomenis.</li>
+  </ul>
+  <p>Jei norite pasinaudoti kuria nors iš šių teisių, susisiekite su manimi naudodami šioje svetainėje esančią kontaktinę formą.</p>
+`;
+
+let currentPrivacyLang = "en";
+
 export function renderPrivacy() {
   animateTransition(() => {
     const viewport = getViewport();
@@ -608,47 +678,57 @@ export function renderPrivacy() {
           Back to Articles
         </button>
 
-        <h1 class="post-detail-title">Privacy Policy</h1>
-
-        <div class="post-detail-meta" style="margin-bottom: 2rem;">
-          <time datetime="2026-07-11">July 11, 2026</time>
+        <div class="privacy-header-row" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 1.5rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+          <div>
+            <h1 class="post-detail-title" id="privacy-title" style="margin-bottom: 0.5rem;">Privacy Policy</h1>
+            <div class="post-detail-meta" style="margin-bottom: 0;">
+              <span id="privacy-last-updated">Last Updated: July 11, 2026</span>
+            </div>
+          </div>
+          <div class="lang-toggle-wrapper">
+            <button id="lang-btn-en" class="lang-btn ${currentPrivacyLang === "en" ? "active" : ""}" aria-label="Switch to English">EN</button>
+            <button id="lang-btn-lt" class="lang-btn ${currentPrivacyLang === "lt" ? "active" : ""}" aria-label="Switch to Lithuanian">LT</button>
+          </div>
         </div>
 
-        <div class="post-detail-body">
-          <p>Welcome to my personal blog. Your privacy is important to me, and I am committed to protecting your personal data. This policy explains what information I collect when you visit my website and use my contact form, and how I handle it.</p>
-
-          <h2>1. Information I Collect</h2>
-          <p>When you use the contact form on this website, I collect the following personal information that you voluntarily provide:</p>
-          <ul>
-            <li>Your Name</li>
-            <li>Your Email Address</li>
-            <li>The content of your message</li>
-          </ul>
-
-          <h2>2. How I Use Your Information</h2>
-          <p>The information you provide through the contact form is used for one purpose only: <strong>to read and respond to your inquiry</strong>. I do not use your email address for marketing purposes, I do not have a newsletter, and I will never sell or share your personal information with third parties for their own commercial use.</p>
-
-          <h2>3. Third-Party Services</h2>
-          <p>To keep this website running securely, I use a few trusted third-party services that act as "Data Processors":</p>
-          <ul>
-            <li><strong>Formspace:</strong> I use Formspace to securely process and route the messages you send via the contact form to my personal email inbox. You can review their privacy practices on their website.</li>
-            <li><strong>Vercel:</strong> This website is hosted on Vercel, which may collect basic, anonymized server logs (like browser type and timestamp) necessary for the security and operation of the site.</li>
-          </ul>
-
-          <h2>4. Data Retention</h2>
-          <p>I only keep your contact form submissions for as long as necessary to resolve your inquiry. Periodically (every 3-6 months), I review and permanently delete old messages and their associated personal data.</p>
-
-          <h2>5. Your Rights</h2>
-          <p>Under the General Data Protection Regulation (GDPR), you have the right to:</p>
-          <ul>
-            <li>Ask what personal data I hold about you.</li>
-            <li>Request that I correct any inaccurate data.</li>
-            <li>Request that I permanently delete your messages and contact details.</li>
-          </ul>
-          <p>If you would like to exercise any of these rights, please reach out to me using the contact form on this website.</p>
+        <div id="privacy-body" class="post-detail-body">
+          <!-- Dynamically loaded content -->
         </div>
       </section>
     `;
+
+    const privacyTitle = document.getElementById("privacy-title");
+    const privacyLastUpdated = document.getElementById("privacy-last-updated");
+    const privacyBody = document.getElementById("privacy-body");
+    const btnEn = document.getElementById("lang-btn-en");
+    const btnLt = document.getElementById("lang-btn-lt");
+
+    function updatePrivacyContent(lang) {
+      currentPrivacyLang = lang;
+      if (lang === "en") {
+        privacyTitle.textContent = "Privacy Policy";
+        privacyLastUpdated.textContent = "Last Updated: July 11, 2026";
+        privacyBody.innerHTML = englishContent;
+        if (btnEn) btnEn.classList.add("active");
+        if (btnLt) btnLt.classList.remove("active");
+      } else {
+        privacyTitle.textContent = "Privatumo Politika";
+        privacyLastUpdated.textContent = "Paskutinį kartą atnaujinta: 2026 m. liepos 11 d.";
+        privacyBody.innerHTML = lithuanianContent;
+        if (btnEn) btnEn.classList.remove("active");
+        if (btnLt) btnLt.classList.add("active");
+      }
+    }
+
+    // Initialize content
+    updatePrivacyContent(currentPrivacyLang);
+
+    if (btnEn) {
+      btnEn.addEventListener("click", () => updatePrivacyContent("en"));
+    }
+    if (btnLt) {
+      btnLt.addEventListener("click", () => updatePrivacyContent("lt"));
+    }
 
     const backBtn = document.getElementById("privacy-back-btn");
     if (backBtn) {

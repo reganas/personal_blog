@@ -1,0 +1,68 @@
+Hey Antigravity! The English Privacy Policy you implemented looks great, but I want to make it properly bilingual for my Lithuanian students using a Language Switcher.
+
+Please update the code to complete the following:
+
+1. Add a Language Toggle to the Privacy Policy Page
+
+Open the existing /privacy page.
+
+Convert it into a client component (if using Next.js App Router, add "use client") so it can handle state, OR use the existing i18n routing if you have already set that up for this project.
+
+Add a simple, elegant language toggle button at the top of the page (e.g., a pill-shaped toggle saying "EN | LT" or two side-by-side buttons).
+
+Store the English text and the Lithuanian text (provided below) in the component.
+
+Conditionally render the correct privacy policy text based on the user's selected language.
+
+2. Update Links & Disclaimers
+
+Find the footer component and ensure the link to the policy is bilingual: "Privacy Policy / Privatumo Politika".
+
+Find the contact form component. Right below the "Submit" button, ensure there is a bilingual disclaimer: "Your information is only used to reply to your inquiry. / Jūsų informacija naudojama tik atsakyti į jūsų užklausą. Read my Privacy Policy / Privatumo Politiką."
+
+Here is the Lithuanian text to use for the 'LT' state on the Privacy Policy page:
+
+Privatumo Politika
+
+Paskutinį kartą atnaujinta: [Įrašykite šiandienos datą]
+
+Sveiki atvykę į mano asmeninį tinklaraštį. Jūsų privatumas man yra svarbus, todėl esu įsipareigojęs saugoti jūsų asmens duomenis. Šioje politikoje paaiškinama, kokią informaciją renku, kai lankotės mano svetainėje ir naudojatės kontaktine forma, bei kaip su ja elgiuosi.
+
+1. Renkama informacija
+
+Kai naudojatės šios svetainės kontaktine forma, renku šią jūsų savanoriškai pateikiamą asmeninę informaciją:
+
+Jūsų vardą
+
+Jūsų el. pašto adresą
+
+Jūsų žinutės turinį
+
+2. Kaip naudoju jūsų informaciją
+
+Informacija, kurią pateikiate per kontaktinę formą, naudojama tik vienam tikslui: perskaityti jūsų užklausą ir į ją atsakyti.
+Nenaudoju jūsų el. pašto adreso rinkodaros tikslais, neturiu naujienlaiškio ir niekada neparduosiu ar neperduosiu jūsų asmeninės informacijos trečiosioms šalims jų komerciniams tikslams.
+
+3. Trečiųjų šalių paslaugos
+
+Siekdamas užtikrinti saugų šios svetainės veikimą, naudoju kelias patikimas trečiųjų šalių paslaugas, kurios veikia kaip „Duomenų tvarkytojai“:
+
+Formspace: Naudoju „Formspace“, kad saugiai apdoročiau ir nukreipčiau jūsų žinutes iš kontaktinės formos į savo asmeninę el. pašto dėžutę. Su jų privatumo praktika galite susipažinti jų svetainėje.
+
+Vercel: Ši svetainė talpinama „Vercel“ platformoje, kuri gali rinkti pagrindinius, anonimizuotus serverio žurnalus (pvz., naršyklės tipą ir laiko žymas), būtinus svetainės saugumui ir veikimui užtikrinti.
+
+4. Duomenų saugojimas
+
+Jūsų kontaktinės formos pateiktus duomenis saugau tik tol, kol to reikia jūsų užklausai išspręsti. Periodiškai (kas 3–6 mėnesius) peržiūriu ir visam laikui ištrinu senas žinutes bei su jomis susijusius asmens duomenis.
+
+5. Jūsų teisės
+
+Pagal Bendrąjį duomenų apsaugos reglamentą (BDAR), jūs turite teisę:
+
+Sužinoti, kokius jūsų asmens duomenis turiu.
+
+Prašyti ištaisyti netikslius duomenis.
+
+Prašyti visam laikui ištrinti jūsų žinutes ir kontaktinius duomenis.
+
+Jei norite pasinaudoti kuria nors iš šių teisių, susisiekite su manimi naudodami šioje svetainėje esančią kontaktinę formą.
