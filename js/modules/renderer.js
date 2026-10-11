@@ -294,7 +294,7 @@ export function renderCV() {
         <div class="cv-header">
           <div class="cv-header-text">
             <h1 class="cv-title">My <span>Resume</span></h1>
-            <p style="color: var(--text-secondary); margin-top: 0.5rem;">Educator & Aspiring Web Developer</p>
+            <p style="color: var(--text-secondary); margin-top: 0.5rem;">English Teacher · Author · Web Developer</p>
           </div>
         </div>
 
@@ -373,11 +373,46 @@ export function renderCV() {
                 Professional Summary
               </h2>
               <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">
-                As a dedicated English Teacher with over 8 years of experience, I am deeply passionate about working with young learners and inspiring a lifelong love of learning. Throughout my career, particularly during my years dedicated to primary and kindergarten education in Vietnam, I have learned the vital importance of building warm, authentic relationships with students. My teaching philosophy prioritizes developing intrinsic motivation and essential life skills over simple memorization. Fostering a creative, brave, and student-centered classroom environment helps students prepare dynamically for their futures.
+                An English teacher with ten years' experience across Lithuania, Vietnam and Mexico, now teaching adults at levels A1 to B2 at language schools in Vilnius, including business English.
               </p>
               <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7; margin-top: 1rem;">
-                I am continuously expanding my horizons—most recently by developing technical problem-solving and logic skills through Web Development. I thrive in collaborative, dynamic communities where I can contribute to positive educational shifts in Lithuania.
+                Working with learners at every stage — kindergarten children in Vietnam, university students and corporate managers in Mexico, working professionals in Vilnius — has shaped a teaching approach built on intrinsic motivation and real-world skills rather than memorisation, and on the relationship with the student that makes the rest possible.
               </p>
+              <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7; margin-top: 1rem;">
+                That classroom experience has recently become published work: two collections of graded readers for English learners, written to a course syllabus and published independently in 2026, which grew out of a gap met every year — students ready to read something real in English, with nothing at their level worth finishing. Alongside teaching, he studies web development and built the publishing toolchain behind the books.
+              </p>
+            </div>
+
+            <!-- Published Work -->
+            <div class="cv-card">
+              <h2 class="cv-section-title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                Published Work
+              </h2>
+              <ul class="cv-edu-list">
+                <li class="cv-edu-item">
+                  <div class="cv-edu-header">
+                    <h3 class="cv-edu-degree">The Woman in the Red Coat <span>— Independently published, 2026</span></h3>
+                  </div>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.25rem;">Twelve original short stories at CEFR A2–B1, each written to a unit of a standard Elementary to Pre-intermediate syllabus. Kindle and digital editions.</p>
+                </li>
+                <li class="cv-edu-item">
+                  <div class="cv-edu-header">
+                    <h3 class="cv-edu-degree">The Last Dinner at Marco's <span>— Independently published, 2026</span></h3>
+                  </div>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.25rem;">Ten original short stories at CEFR B1, written to an Intermediate syllabus. Kindle and digital editions.</p>
+                </li>
+                <li class="cv-edu-item">
+                  <div class="cv-edu-header">
+                    <h3 class="cv-edu-degree">The Woman in the Red Coat and Other Stories <span>— Independently published, 2026</span></h3>
+                  </div>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.25rem;">Both collections in a single 188-page paperback: twenty-two stories with a combined glossary of 311 words. Every story carries its own vocabulary list, comprehension questions, summary, and speaking and writing tasks, with a full answer key — written for self-study and classroom use.</p>
+                  <a href="https://payhip.com/JustinasSteikunas" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 0.75rem; font-size: 0.875rem; font-weight: 600; color: var(--accent-primary); text-decoration: none;">Browse all editions →</a>
+                </li>
+              </ul>
             </div>
 
             <!-- Professional Experience -->
