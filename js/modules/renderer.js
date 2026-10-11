@@ -60,7 +60,7 @@ export function renderHome() {
             <span class="hero-badge">Welcome to my space</span>
             <h1 class="hero-title">Hey, I'm <span>Justinas Steikunas</span>.</h1>
             <p class="hero-description">
-              I teach English to adults in Vilnius and write graded readers — real short stories for people learning the language, written at the level they're actually at. Three books so far. I also study web development, and built this site.
+              I teach English to adults — in person in Vilnius, online across Lithuania — and I write graded readers: real short stories for people learning the language, pitched at the level they're actually at. Three books so far. I built this site myself.
             </p>
           </div>
           <div class="hero-avatar-container">
