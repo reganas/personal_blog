@@ -1,39 +1,149 @@
 const blogPosts = [
   {
+    id: "teachers-dont-burn-out-from-teaching",
+    title: "Teachers Don't Burn Out From Teaching",
+    date: "October 11, 2026",
+    readTime: "6 min read",
+    banner: "./assets/teacher_burnout_banner.jpg",
+    summary:
+      "France has spent three weeks with its schools blockaded, and the government has promised three thousand teachers. But almost nobody leaves this job because of the lessons. The lessons are the part that works.",
+    tags: ["Teaching", "Education", "Society"],
+    content: `
+      <p class="lead">Since the end of September, France has been having an argument about its schools in the street. On 8 October around 71,500 people marched, 24,500 of them in Paris. Three hundred and seventy-five schools were closed in whole or in part. The Education Minister announced that 3,000 teachers would be moved into high-priority schools within days, and a few hundred more recruited. The protesters were not satisfied, and called another day of action for the 13th.</p>
+
+      <p>It started with students, not staff. What they are asking for is unglamorous: buildings that are not falling apart, fewer hours crammed into the week, schools that work. But the complaint underneath it is one teachers have been making quietly for a decade, and it is worth saying plainly what that complaint is, because the usual word for it — burnout — points at the wrong thing.</p>
+
+      <h2>The number that should worry Lithuania</h2>
+
+      <p>When the OECD published its most recent comparison of teacher retention, England came out badly: close to one teacher in ten left the profession in a single year, and more than ninety per cent of those who left did so before retirement age. They did not finish. They stopped.</p>
+
+      <p>Only three countries in the sample did worse. One of them was Lithuania.</p>
+
+      <p>That is where I work. It is not a story about France, or about England, and it is not a story about a few people who could not cope. When a profession loses its members at that rate, and loses them decades before they were due to go, the explanation is not in the people.</p>
+
+      <h2>The lesson is the good part</h2>
+
+      <p>Here is what I think gets missed in almost every article about this. Teachers do not leave because of teaching.</p>
+
+      <p>I have taught for ten years, in Lithuania, Vietnam and Mexico, to five-year-olds and to corporate managers. The hour in the room is the part that works. It is tiring in the way that running is tiring — you are spent afterwards and you would do it again tomorrow. Six lessons back to back will empty me out completely and I will still go home in a good mood, because something happened in each of them.</p>
+
+      <p>What empties me out in the other way is a day with two lessons and four hours of everything else. Forms that ask for information the school already holds. A plan written in a format nobody will read, for an observer who will assess it against criteria that have nothing to do with whether anyone learned anything. A group of twenty-eight in a room where the method you were trained in needs sixteen. A parent who has decided, before you speak, that the problem is you.</p>
+
+      <p>None of that is teaching. All of it is attached to teaching, and it is what people are leaving.</p>
+
+      <blockquote>
+        A tiring day and a draining day feel nothing alike. Teachers can take an unlimited number of the first kind. It is the second kind that ends careers.
+      </blockquote>
+
+      <h2>Why "burnout" is the wrong word</h2>
+
+      <p>Burnout sounds like a fire that went out — as though the person used themselves up and nothing can be done except rest and return. That framing is convenient for everyone except the teacher, because it puts the problem inside them. It leads to the wellness workshop, the mindfulness afternoon, the email about self-care sent at nine in the evening.</p>
+
+      <p>But a teacher who is drowning in administration does not need to learn to breathe. The honest description is simpler and less comfortable: the job as it is currently constructed asks for more than it is possible to give, and the parts it adds are not the parts that teach anyone anything.</p>
+
+      <p>You can see which explanation a system believes by what it offers. If it offers resilience training, it thinks the problem is you. If it offers smaller groups and less paperwork, it has understood.</p>
+
+      <h2>Will three thousand teachers fix it?</h2>
+
+      <p>It will help. Schools that are short-staffed right now will be less short-staffed, and that is not nothing to the people in them this term.</p>
+
+      <p>But I would want to know what the new three thousand are walking into. If the conditions are the ones that emptied the posts in the first place, you have not solved a shortage, you have refilled a leaking container. The measure of whether France has fixed anything is not how many teachers it hires in October. It is how many are still there in five years.</p>
+
+      <p>And the same question applies here, where the leaving rate is worse and nobody is marching.</p>
+
+      <h2>What actually keeps people in it</h2>
+
+      <p>I do not have a policy to propose. I have an observation, which is that every teacher I know who has lasted has found some part of the work that belongs to them — something outside the forms, that nobody is assessing, that is theirs.</p>
+
+      <p>For some people it is one class they have taught for years. For some it is a subject they know far better than they need to. For me it turned into writing books for the learners I could not find good material for, which began as a problem in a classroom in Vilnius and is now three published volumes.</p>
+
+      <p>That is not a solution to a staffing crisis, and I am not pretending it is. Systems have to be fixed at the level of systems, which is what the students in Paris are shouting about and why they are right to. But while that argument goes on, the thing that keeps a person in this profession is usually small, concrete and self-chosen.</p>
+
+      <p>The hour in the room is still the good part. It is everything we have bolted onto it that people are walking away from.</p>
+
+      <p class="post-sources"><em>Figures from Interior Ministry and government statements reported on 8 October 2026, and from the OECD's Education at a Glance teacher retention data.</em></p>
+    `,
+  },
+  {
+    id: "the-frictionless-gym-why-we-traded-the-post-workout-high-for-comfort",
+    title:
+      "The Frictionless Gym: Why We Traded the Post-Workout High for Comfort",
+    date: "July 12, 2026",
+    readTime: "4 min read",
+    banner: "./assets/gym_culture_banner.svg",
+    summary:
+      "The modern gym has been redesigned around comfort, and it works — more people come. But the thing that made it worth coming to was never comfortable.",
+    tags: ["Fitness", "Culture", "Wellness"],
+    content: `
+      <p class="lead">Step onto a gym floor today and something is missing. The hard breathing, the clanking iron, the headphones-on isolation — largely gone. The gym has been sanitised, socialised, and turned from a place of physical struggle into a comfortable third space between work and home.</p>
+
+      <p>This was not an accident. Gyms worked out that growth meant removing the intimidation, and they were right: far more people walk through the door than did twenty years ago, including plenty who would never have gone near the old version. That is a genuine good, and any argument about what was lost has to start by admitting it.</p>
+
+      <p>But something was lost.</p>
+
+      <h2>The barrier that did something</h2>
+
+      <p>The old atmosphere came with an unspoken expectation. You felt you had to earn your place on the floor by matching the intensity in the room. That expectation kept a lot of people out, which is why it had to go — but for those who stayed, it did real work. It set a floor under the effort.</p>
+
+      <p>Remove it and nothing takes its place. The room is so neutral you no longer need headphones to shut it out, because there is nothing to shut out. It becomes a utility space: arrive, move through the motions, leave without ever having been uncomfortable.</p>
+
+      <h2>Adaptation needs a reason</h2>
+
+      <p>Here is the part that is not a matter of taste. A body changes when it is asked to do something it cannot comfortably already do. That is the whole mechanism — progressive overload, in the textbook phrase. Lift what you lifted last month for the same number of repetitions and you will maintain what you have, which is fine, and you will build nothing, which may not be what you came for.</p>
+
+      <p>The feeling afterwards follows the same logic. The flood of wellbeing people describe after a hard session is a response to having been pushed. A gentle stretch and a scroll through the phone will leave you calmer than when you arrived. It will not leave you with that.</p>
+
+      <p>So the honest framing is not that the modern gym is worse. It is that it has stopped doing one job for you. The old room supplied the pressure from outside. The new one asks you to bring it.</p>
+
+      <blockquote>
+        A comfortable gym is not a failure. It is a gym that has handed the difficult part back to you.
+      </blockquote>
+
+      <h2>Bringing your own friction</h2>
+
+      <p>That is harder than it sounds, because nothing in the environment will remind you. Nobody is watching, nobody expects anything, and a session where you did very little looks from the outside exactly like a session where you did a lot.</p>
+
+      <p>Which means you need something external that is not the room: a number you are trying to beat, a programme you did not write yourself, a training partner, a date in the calendar. Something that notices when you take the easy option.</p>
+
+      <p>The gym stopped providing that, reasonably, in exchange for being a place far more people are willing to enter. If you want what the old version gave, you now have to build it yourself.</p>
+    `,
+  },
+  {
     id: "confessions-of-a-35-year-old-millennial",
     title:
       "Confessions of a 35-Year-Old Millennial: Why We Feel So Unprepared for Life",
     date: "July 9, 2026",
-    readTime: "5 min read",
+    readTime: "4 min read",
     banner: "./assets/millennial_banner.jpg",
     summary:
-      "Many 35-year-old millennials wake up feeling like they missed the orientation for adulthood. Sheltered upbringings, a broken economy, and an outdated script for life have left a generation quietly overwhelmed — and it is not a personal failure.",
+      "Many of us woke up around thirty-five feeling we had missed the orientation for adulthood. It helps to notice that the script we are failing was written for a world that no longer exists.",
     tags: ["Society", "Psychology", "Millennials"],
     content: `
-      <p class="lead">It is a quiet reality for many 35-year-old millennials: waking up one day and realizing that adulthood feels less like a natural progression and more like a missed orientation. For those who grew up somewhat sheltered or without major early-life struggles, the sudden transition into full-blown responsibility can be completely overwhelming.</p>
+      <p class="lead">There is a quiet experience a lot of people my age seem to share: waking up one day and finding that adulthood feels less like something you grew into and more like a meeting you missed. If you grew up reasonably sheltered, the arrival of full responsibility can be genuinely disorienting — and the suspicion that everyone else was given instructions is hard to shake.</p>
 
-      <p>The skills required to navigate everyday life often feel absent, leaving a lingering fear that everyone else somehow figured it out while we were looking the other way.</p>
+      <h2>The weight of ordinary things</h2>
 
-      <h2>The Weight of the Mundane</h2>
-      <p>Things that seem effortless to older generations — like fixing things around the apartment or maintaining a household — often feel like insurmountable tasks. There is a heavy, unspoken guilt associated with this. However, the reality of modern "adulting" is shifting. Recognizing a problem and outsourcing the solution is a valid way to navigate these hurdles. When a kitchen appliance like an old, smoking oven breaks down, simply ordering a replacement and hiring a handyman to install it is a genuine victory. It is not about doing it all yourself; it is about taking charge and getting it done.</p>
+      <p>Tasks that older relatives appear to perform without thinking — fixing something in the flat, keeping a household running — can feel disproportionately heavy, and there is a particular guilt attached to admitting it.</p>
 
-      <h2>The Exhaustion of "Status Checks"</h2>
-      <p>This feeling of being perpetually behind makes socializing uniquely exhausting. Conversations with peers and family members frequently devolve into interrogations about jobs, life plans, and traditional milestones. When these topics do not align with personal interests or reality, these interactions feel incredibly alienating.</p>
-      <p>It is completely natural to avoid them. Sometimes, having a complex conversation with an AI about macroeconomics or philosophy is infinitely more appealing than sitting through a draining dinner party comparing mortgages and career trajectories. When socializing feels like an assessment rather than a connection, pulling back is a normal defense mechanism.</p>
+      <p>What helped me was dropping the idea that competence means doing it yourself. When the oven started smoking, I did not learn to repair ovens. I ordered a new one and paid someone to fit it, and the thing got done. Recognising a problem and arranging a solution is a legitimate way to be an adult. It is not the way we were shown, but the result is a working oven either way.</p>
 
-      <h2>The Root of the Generational Disconnect</h2>
-      <p>This internal struggle is not just a personal flaw; it is deeply connected to much broader generational trends that are defining millennials today.</p>
-      <ul>
-        <li><strong>The Loneliness Epidemic:</strong> When social interactions feel like a subtle competition or a constant reminder of unreached milestones, withdrawing becomes the safest and most peaceful option.</li>
-        <li><strong>Opting Out of Parenthood:</strong> If just managing an apartment and keeping up with day-to-day maintenance feels like carrying a heavy weight, the idea of adding the massive, lifelong responsibility of a child into the mix is terrifying.</li>
-        <li><strong>Financial Instability:</strong> The pressure to hit traditional markers of success — within an economy that is fundamentally broken compared to the one previous generations enjoyed — creates a constant baseline of anxiety.</li>
-      </ul>
+      <h2>When socialising becomes assessment</h2>
+
+      <p>The sense of being perpetually behind makes company exhausting in a specific way. Conversations drift towards jobs, plans and milestones, and if your life does not line up neatly against those, the questions stop feeling like interest and start feeling like an audit.</p>
+
+      <p>Avoiding that is a reasonable response, though it has an obvious cost: the people asking are mostly not auditing anything, and withdrawing from them to avoid a feeling they did not intend is a bad trade made quietly, over years.</p>
+
+      <h2>The script problem</h2>
+
+      <p>Most of this is less personal than it feels. The markers we are measuring ourselves against — the house, the settled career by thirty, the family — were set in an economy that no longer exists. Housing in particular has moved so far out of reach for so many that failing to reach it says almost nothing about the person failing.</p>
 
       <blockquote>
-        "We were handed a script for adulthood that was written decades ago. When our actual lives do not match that script, it is easy to internalize it as a failure."
+        We were handed a script for adulthood written decades ago. When our actual lives do not match it, it is easy to read that as a personal failure.
       </blockquote>
 
-      <p>But perhaps it is simply time to accept that moving at our own pace, prioritizing our own peace, and rewriting the rules of what it means to be an adult is the only sustainable way forward.</p>
+      <p>Noticing that the script is out of date does not make the rent cheaper. But it does change what the feeling means. Falling short of a target that was set for different conditions is not the same as falling short.</p>
+
+      <p>Which leaves the slower, less satisfying work: deciding which of those milestones you actually want, dropping the ones you were only carrying because you were handed them, and moving at the pace the real conditions allow.</p>
     `,
   },
   {
@@ -43,55 +153,36 @@ const blogPosts = [
     readTime: "4 min read",
     banner: "./assets/football_banner.jpg",
     summary:
-      "The World Cup is dominating the global conversation while wars, economic chaos, and slow-moving crises quietly fade from the front page. Is football the world's greatest escape hatch — or something more dangerous?",
+      "The World Cup is dominating the conversation while wars and slow-moving crises slide off the front page. Nobody had to arrange that — attention does it by itself, and that is the uncomfortable part.",
     tags: ["Society", "Politics", "Psychology"],
     content: `
-      <p class="lead">Right now, the World Cup in the USA is completely dominating the global conversation. The internet is endlessly debating political theater — like the sheer drama of politicians getting involved in red card penalties — while massive, world-altering crises are quietly pushed off the front page.</p>
+      <p class="lead">The World Cup in the USA is currently taking up most of the available conversation. The internet is busy with refereeing controversies and the politicians who cannot resist commenting on them, while a number of considerably larger things have slipped off the front page.</p>
 
-      <p>The ongoing war in Ukraine, the devastation in Gaza, and the economic chaos from the Strait of Hormuz closure have all taken a backseat to a game played on a pitch. Even the most dedicated activists eventually run out of steam, and the world just moves on to the next spectacle.</p>
+      <p>Ukraine is still at war. Gaza is still devastated. Energy markets are still unstable in ways that reach everyone's bills. None of this stopped. It simply stopped being what people are talking about.</p>
 
-      <h2>Compassion Fatigue and the Escape</h2>
-      <p>Why does this happen so easily? It comes down to basic human psychology. We are suffering from massive compassion fatigue. People simply cannot sustain high-stress outrage for months on end. When real-world problems feel entirely out of our control — whether it is a geopolitical war or an impending El Niño weather disaster — our brains desperately look for an escape hatch. Sports provide the perfect, low-stakes drama to numb the exhaustion of reality.</p>
+      <h2>Attention is finite, and we are at the end of ours</h2>
 
-      <h2>The Danger of Looking Away</h2>
-      <p>The deeper problem is that the structural issues we are ignoring do not hit pause just because a tournament started. Our deteriorating economies, plunging birth rates, and skyrocketing inequalities are slow-moving disasters. Politicians and media networks do not even need to manufacture distractions; they just point the cameras at the football pitch so we stop asking the hard questions about our daily struggles.</p>
+      <p>The easy explanation is that somebody wants us distracted. I do not think that is what is happening, and the real explanation is less comforting.</p>
+
+      <p>Sustained outrage is not something human beings can do indefinitely. After a certain amount of time following a catastrophe you cannot influence, the attention simply stops arriving — not as a decision, but the way a muscle stops holding a weight. Psychologists call it compassion fatigue. It is not a character flaw and it is not cynicism. It is a limit.</p>
+
+      <p>When that limit is reached, we look for something with stakes we can feel and consequences we can survive. A tournament is perfect: genuine drama, real emotion, and nothing at the end of it that can hurt you.</p>
+
+      <h2>Nobody needs to orchestrate this</h2>
+
+      <p>That is what makes it hard to argue with. There is no need for anyone to point the cameras away from the difficult stories, because the audience turns its own head. A newspaper that leads with the war for the ninetieth consecutive day loses readers to one that leads with the semi-final, and the market does the rest.</p>
 
       <blockquote>
-        "Ignoring a fundamentally broken system does not fix it. We are essentially putting a band-aid on a broken leg."
+        You do not need a conspiracy to explain a distraction that everybody involved is choosing.
       </blockquote>
 
-      <p>We are collectively choosing to kick the can down the road. But ignoring a fundamentally broken system does not fix it. We are essentially putting a band-aid on a broken leg, ensuring that when the reality check finally comes, the impact will be much harder to survive.</p>
-    `,
-  },
-  {
-    id: "the-frictionless-gym-why-we-traded-the-post-workout-high-for-comfort",
-    title:
-      "The Frictionless Gym: Why We Traded the Post-Workout High for Comfort",
-    date: "July 12, 2026",
-    readTime: "5 min read",
-    banner: "./assets/gym_culture_banner.svg",
-    summary:
-      "The modern gym has traded grit and post-workout reward for a low-friction comfort space, leaving vitality behind.",
-    tags: ["Fitness", "Culture", "Wellness"],
-    content: `
-      <p class="lead">Step onto any gym floor today, and you will notice something is missing. The rough breathing, the clanking iron, the intense, headphones-on isolation—it has largely vanished. The modern gym has been sanitized, socialized, and transformed from a crucible of physical struggle into a comfortable "third space" between work and home.</p>
+      <h2>The problem with the pause</h2>
 
-      <p>This shift isn't an accident; it is the commodification of comfort. Gyms realized that scaling their business meant removing the intimidation factor. But in our quest for "wellness," have we lost the very friction that makes the workout worthwhile?</p>
+      <p>None of the slow disasters pause for a tournament. Debt, demographics, housing and the climate all move at a speed too gradual to hold anyone's attention and too fast to ignore for a decade — which is exactly the speed at which problems get left.</p>
 
-      <h2>The Rise of the "Low-Friction" Workout</h2>
-      <p>The hardcore, testosterone-fueled atmosphere of the past demanded a certain level of performance. You felt an unspoken social pressure to earn your place on the floor by matching the intensity in the room. Today, that barrier to entry is gone. It is entirely common to see people—men included—trading heavy barbells for a yoga mat, a light stretch, and a scroll through their phones.</p>
+      <p>I am not going to pretend the answer is to care more about everything all of the time, because that is not available and demanding it of people only produces guilt. The more realistic version is narrower: pick one thing that is actually yours — local, specific, something where your attention changes an outcome — and keep that one going while the rest of the conversation moves on to the next spectacle.</p>
 
-      <p>The environment is so neutral that you don't even need headphones anymore to drown out the noise, because the noise simply isn't there. It has become a utility space: you show up, you go through the motions, and you leave without ever breaking a sweat.</p>
-
-      <h2>The Biological Cost of "Hanging Out"</h2>
-      <p>While this frictionless environment makes it incredibly easy to show up, it comes with a steep physiological cost. That post-workout "high"—the surge of endorphins and dopamine—is a metabolic reward that only triggers when you cross the threshold of physical discomfort.</p>
-
-      <p>When we optimize for comfort and replace exertion with "stretching," we are soothing our nervous systems when we should be resetting them. By avoiding that "I want to quit" moment, we miss out on the biological growth that comes from surviving physical stress.</p>
-
-      <h2>Why Everything Feels "Flat"</h2>
-      <p>There is a direct link between this behavioral shift and the modern feeling of "flatness." Vitality and internal drive are tied to risk-taking, competitiveness, and overcoming challenges. When you live a completely climate-controlled, low-friction life—and then carry that exact same energy into the gym—your body adapts. It stops producing the hormones needed for aggression and drive because the environment signals that you don't <em>need</em> them.</p>
-
-      <p>We have traded vitality for convenience. The modern gym doesn't force you to push hard anymore, which is a relief if you just want to relax. But if you want that old-school spark back, you have to build your own internal wall, ignore the lounge-like atmosphere, and actively seek the friction yourself.</p>
+      <p>Diffuse concern about everything reliably produces nothing. It is only ever the narrow kind that does anything at all.</p>
     `,
   },
   {
@@ -101,46 +192,59 @@ const blogPosts = [
     readTime: "6 min read",
     banner: "./assets/global_economy.jpg",
     summary:
-      "Have you looked at the news lately and felt a strange sense of déjà vu? Across the Western world, national debts are hitting numbers that don’t even sound real anymore. We examine the economic dilemmas, demographic realities, and generational housing divides.",
+      "National debts across the West have reached numbers that stopped sounding real. Here is the bind governments are in, the demographic arithmetic underneath it, and the case that it is less apocalyptic than it looks.",
     tags: ["Economy", "Finance", "Society"],
     content: `
-      <p class="lead">Have you looked at the news lately and felt a strange sense of déjà vu? It feels like we are watching a movie we’ve seen before, but this time, the stakes are much higher. Across the Western world, national debts are hitting numbers that don’t even sound real anymore.</p>
-      
-      <p>Take a look at the UK right now. We just watched Prime Minister Keir Starmer step down after his approval ratings tanked. Why? Because governing right now feels like an impossible task. When a country starts spending more money just to pay off the interest on its debt than it does on educating its children, you have to stop and ask: How did we get here, and how much longer can this actually last?</p>
+      <p class="lead">Across the Western world, national debt has reached a level where the interest alone is a major line in the budget. When a country spends more servicing what it owes than it spends educating its children, it is worth stopping to ask how that happened and how long it can continue.</p>
 
-      <h2>The Unwinnable Dilemma: Damned If You Do, Damned If You Don't</h2>
-      <p>Think about the position new leaders are being put in. They are essentially trapped between a rock and a hard place:</p>
+      <p>I am not an economist. What follows is a reader's attempt to lay out the bind clearly, including the arguments against my own worry.</p>
+
+      <h2>The bind</h2>
+
+      <p>Governments across Europe are caught between two bad options.</p>
+
       <ul>
-        <li><strong>The Austerity Trap:</strong> If a government decides to pull back, raise taxes, or cut public services to balance the books, what happens? We saw the massive chaos in France when they tried to adjust the working age. People are already stretched incredibly thin by the cost of living. Can a government even survive the social unrest that follows austerity?</li>
-        <li><strong>The Borrowing Trap:</strong> On the flip side, if a leader tries to please voters by spending and borrowing more money, how will the financial markets react? Will investors demand higher interest rates to lend that money, making the original debt problem even worse?</li>
+        <li><strong>Consolidate.</strong> Raise taxes or cut spending to stabilise the debt. The arithmetic works. The politics frequently does not — France's pension reform produced months of unrest, and populations already squeezed by living costs have limited patience for being squeezed further.</li>
+        <li><strong>Spend.</strong> Borrow to fund the services voters are demanding. This is popular until the bond market prices in the extra risk, at which point borrowing costs rise and the original problem gets worse.</li>
       </ul>
-      <p>When the traditional ways of managing an economy stop working, where do we go next? Is it any wonder populist and outsider parties are suddenly leading the polls? When the system feels broken, shouldn't we expect voters to look for radical alternatives?</p>
 
-      <h2>Can "Business-Friendly Socialism" Save Us?</h2>
-      <p>Look at the UK’s likely next move. Andy Burnham is currently the favorite to take the reins, bringing a heavily buzzed-about model of state intervention and public investment. It’s popular, it’s fresh, and it promises to fix broken public services.</p>
-      <p>But we have to ask the hard question: Where does the money come from? If a new government borrows heavily in a high-interest environment to fund these massive social promises, are they fixing the problem, or are they just kicking an even bigger can down the road? What happens when the bill finally comes due?</p>
+      <p>When the conventional levers stop producing good outcomes either way, it is not surprising that voters start looking at parties offering something outside the conventional range. That is less a moral failure of the electorate than a predictable response to two unattractive options presented as the only ones.</p>
+
+      <h2>Thin margins</h2>
+
+      <p>What worries me more than the absolute numbers is the lack of room. Economies used to carry buffers — lower debt, more fiscal space, the ability to absorb a shock and recover. Much of that was spent on the financial crisis and then on the pandemic, and it has not been rebuilt.</p>
 
       <blockquote>
-        "In the past, our economies had 'buffers'—savings, lower debts, and flexibility to absorb bad news. But today? We are running on fumes."
+        A high debt load is survivable. A high debt load with no capacity left to respond to the next shock is a different proposition.
       </blockquote>
 
-      <h2>Shocks to the System: Are We One Crisis Away from a Collapse?</h2>
-      <p>In the past, our economies had buffers, but today we are vulnerable. Can our economies actually handle another massive global shock?</p>
-      <ul>
-        <li><strong>The Energy Crisis:</strong> Look at how volatile things got when the Strait of Hormuz faced disruptions, pushing oil past $120 a barrel. Can our personal wallets—or national budgets—handle another massive energy spike?</li>
-        <li><strong>The AI Bubble:</strong> We’ve been banking heavily on Artificial Intelligence to drive economic growth. But what if the critics are right? What if we are sitting inside an AI tech bubble that’s mirroring the dot-com crash of 2000? If that bubble bursts, what’s left to prop up the market?</li>
-      </ul>
-      <p>If you combine an energy crisis, ongoing geopolitical conflicts, and a tech crash, do our governments actually have the financial firepower left to bail us out a second or third time? Or have they already used up all their lifelines?</p>
+      <p>And there are plenty of candidate shocks: energy disruption, a correction in the enormous bet currently being placed on artificial intelligence, or something nobody is modelling. The question is not whether governments could bail out an economy once more. It is whether they could do it twice.</p>
 
-      <h2>The Demographic Iceberg: Who is Going to Pay for All of This?</h2>
-      <p>Beneath the daily political drama lies a much quieter, structural crisis: Nobody is having babies.</p>
-      <p>Our entire modern economic system—our pensions, our healthcare, our social safety nets—was built like a pyramid. It relies on a massive base of young, working taxpayers to fund the retirement of a smaller group of older people. But that pyramid is flipping upside down.</p>
-      <p>As the population ages, spending on healthcare and pensions goes up automatically. At the same time, a shrinking workforce means fewer people are producing goods and paying taxes. How do you pay off a mountain of national debt when your economy is structurally shrinking?</p>
+      <h2>The demographic arithmetic</h2>
 
-      <h2>The Generational Lottery: Why the Youth Are Angry</h2>
-      <p>We cannot talk about this economic crisis without addressing the elephant in the room: the sheer luck of when you were born.</p>
-      <p>If you are a young person today, you are inheriting an economy defined by housing insecurity and a rigged game. Baby Boomers bought homes for a fraction of today's prices and watched their equity explode, while younger generations are essentially locked out of the property market entirely.</p>
-      <p>When you realize you will likely never achieve the prosperity your parents enjoyed, your entire view of politics changes. It leads to a total collapse in trust for democratic institutions, and it is precisely why younger demographics are beginning to drift toward radical political extremes. Why support a status quo that doesn't support you?</p>
+      <p>Underneath the political noise sits something slower and harder to argue with. Birth rates across Europe are well below replacement.</p>
+
+      <p>Modern states were built on a shape: a wide base of working-age taxpayers funding a narrower top of retired people. Pensions, healthcare and social care all assume it. That shape is inverting. Spending on the old rises automatically as the population ages, while the working population that funds it shrinks.</p>
+
+      <p>You cannot grow your way out of a debt burden with an economy that is structurally contracting — not easily, and not for long.</p>
+
+      <h2>The case that I am too gloomy</h2>
+
+      <p>It would be dishonest to leave it there, because there are serious arguments on the other side.</p>
+
+      <p>Debt-to-GDP ratios have been far higher before — Britain's after the Second World War was roughly double today's — and were reduced over decades without catastrophe, through growth and inflation rather than crisis. Debt that is owed in a currency you issue yourself is a different kind of problem from debt that is not. Demographics can be offset by migration and by productivity, and a genuine productivity gain from automation would change the arithmetic considerably. And predictions of imminent collapse have an extremely poor track record; the people forecasting one have been right eventually and wrong for a very long time first.</p>
+
+      <p>The honest position is probably that this is a slow problem rather than a cliff: not a crash, but decades of tighter budgets, higher taxes, thinner services and sharper arguments about who pays.</p>
+
+      <h2>The generational part</h2>
+
+      <p>Which brings up the thing that makes this personal rather than statistical: a great deal now depends on when you were born.</p>
+
+      <p>If you are young today you are entering an economy defined by housing you cannot buy. The generation that bought property at a fraction of current prices watched its value multiply, and the generation after is largely locked out — not through any difference in effort, but through timing.</p>
+
+      <p>It is difficult to overstate what that does to the sense that the system is fair. Institutions keep the consent of the people inside them by appearing to offer a reasonable deal, and a large number of people under forty no longer believe they have been offered one. The resulting loss of trust shows up in voting patterns across Europe, and it will not be argued away by pointing out that the numbers are survivable.</p>
+
+      <p>The debt may well be manageable. The sense of having been handed a worse deal than your parents got, for no reason you can identify, is the part I would be watching.</p>
     `,
   },
 ];
